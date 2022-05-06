@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/aimakerspace/ml-project-cookiecutter-gcp",
+  "commit": "ef038f9f9997253274364d4b4dd5f3f7141c1960",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "cookie mask rcnn",
+      "description": "asdf",
+      "repo_name": "cookie-mask-rcnn",
+      "src_package_name": "cookie_mask_rcnn",
+      "src_package_name_short": "cmr",
+      "gcp_project_id": "cvhub-312105",
+      "gcr_personal_subdir": "Yes",
+      "author_name": "yier",
+      "open_source_license": "MIT",
+      "_copy_without_render": [
+        "aisg-context/polyaxon/polyaxonfiles"
+      ],
+      "_template": "https://github.com/aimakerspace/ml-project-cookiecutter-gcp"
+    }
+  },
+  "directory": null
+}
