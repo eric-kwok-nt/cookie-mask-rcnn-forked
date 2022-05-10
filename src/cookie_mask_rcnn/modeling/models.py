@@ -21,8 +21,11 @@ def seq_model(args):
     """
 
     hub_layer = hub.KerasLayer(
-        args["train"]["pretrained_embedding"], input_shape=[],
-        dtype=tf.string, trainable=True)
+        args["train"]["pretrained_embedding"],
+        input_shape=[],
+        dtype=tf.string,
+        trainable=True,
+    )
 
     model = tf.keras.Sequential()
     model.add(hub_layer)
@@ -32,6 +35,7 @@ def seq_model(args):
     model.compile(
         optimizer=args["train"]["optimiser"],
         loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
-        metrics=[args["train"]["metric"]])
+        metrics=[args["train"]["metric"]],
+    )
 
     return model
